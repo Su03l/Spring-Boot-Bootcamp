@@ -2,7 +2,6 @@ package com.example.firstapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class FirstAppApplication {
@@ -11,13 +10,9 @@ public class FirstAppApplication {
 
         var ctx = SpringApplication.run(FirstAppApplication.class, args);
 
-        MyFirstClass myFirstClass = ctx.getBean(MyFirstClass.class);
+        MyFirstClass myFirstClass = ctx.getBean("myBean", MyFirstClass.class);
         System.out.println(myFirstClass.sayHello());
     }
 
-    @Bean
-    public MyFirstClass myFirstClass() {
-        return new MyFirstClass();
-    }
 
 }
