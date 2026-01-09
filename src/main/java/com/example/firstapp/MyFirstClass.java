@@ -12,6 +12,6 @@ public class MyFirstClass {
     }
 
     public String sayHello() {
-        return "Hello, from MyFirstClass ==> myVar" + myVar;
+        return "Hello, from MyFirstClass ==> myVar = " + myVar;
     }
 }
