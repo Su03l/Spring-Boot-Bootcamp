@@ -8,6 +8,6 @@ public class ApplicationConfig {
 
     @Bean("myBean")
     public MyFirstClass myFirstClass() {
-        return new MyFirstClass("First Bean");
+        return new MyFirstClass(" First Bean");
     }
 }

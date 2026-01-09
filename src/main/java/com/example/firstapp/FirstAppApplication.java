@@ -10,8 +10,8 @@ public class FirstAppApplication {
 
         var ctx = SpringApplication.run(FirstAppApplication.class, args);
 
-        MyFirstClass myFirstClass = ctx.getBean("myBean", MyFirstClass.class);
-        System.out.println(myFirstClass.sayHello());
+        MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
+        System.out.println(myFirstService.tellAStory());
     }
 
 
